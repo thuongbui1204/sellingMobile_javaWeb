@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial;
+    padding:10px;
+    
+
+}
+.container-fluid{
+	background-color: #f1f1f1;
+}
+/*header/Bolog Title */
+#logo{
+    width:70px;
+    display:block;
+    float:left;
+    padding-bottom: 10px;
+}
+.quickInfor{
+	color:rgb(91, 83, 83);
+}
+
+.quickInfor a{
+	color:rgb(91, 83, 83);
+}
+.header{
+    background-image: url("../media/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:black;
+
+}
+.navbar{
+    background-color: #ddd;
+}
+.nav-item{
+    background-color: #ddd;
+}
+
+.nav-link{
+	color:black;
+}
+/* change color on hover*/
+.nav-item:hover{
+    background-color: #aaa;
+    color: black;
+}
+.leftbar{
+	color:black;
+}
+.leftbar:hover{
+	color:white;
+	background:gray;
+}
+.card-body{
+	background-image: url("../media/background.png");
+}
+.card-title{
+	color:gray;
+}
+.card-text{
+	color:black;
+}
+.footer{
+	background-color: white;
+}
+.aDecor:hover{
+	text-decoration:none !important;
+	color:black !important;
+}
+.confirm1{
+	display:none;
+	color:red;
+}
+.wrongdata{
+	color:red;
+	font-size:80%;
+	padding-top:10px;
+}
+@media only screen and (min-width: 600px){
+	.header form{
+		width:75%;
+		margin:auto;
+	}
+}
+@media only screen and (max-width: 600px){
+	.header form{
+		width:90%;
+		margin:auto;
+	}
+}

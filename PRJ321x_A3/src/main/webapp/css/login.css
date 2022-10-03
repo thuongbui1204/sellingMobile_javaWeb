@@ -1,0 +1,199 @@
+@charset "UTF-8";
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+    padding-top:40px;
+}
+.login{
+    width:800px;
+    margin:auto;
+    border: 5px solid #aaa;
+    box-shadow: 5px 10 rgb(180, 127, 127);
+    background-image: url("../media/background.png");
+    box-shadow:20px 20px 10px gray;
+}
+.loginRequire{
+	color:green;
+	padding-left:40px;
+}
+
+#register{
+	padding:5px 10px;
+	background-color:orange;
+	border:none;
+	float:right;
+}
+#register:hover{
+	color:black;
+	background-color:#f2c921;
+}
+
+.leftcolumn{
+    background-color: white;
+    display:block;
+    float:left;
+    width:55%;
+    padding-top:40px;
+}
+.rightcolumn{
+    display:block;
+    float:left;
+    width:45%;
+    position: relative;
+    text-align: center;
+    color:black;
+}
+#welcome{
+    font-size:larger;
+    position:absolute;
+    top:200px;
+}
+.card1{
+    padding: 40px;
+    line-height: 0;
+}
+.card2{
+    background-color: #f1f1f1;
+    padding: 5px 40px;
+    line-height: 0;
+}
+input{
+    width:100%;
+    height:30px;
+    border: 1px solid #aaa;
+}
+/* Clear floats after the columns */
+.row:after{
+content: "";
+display: table;
+clear: both;
+}
+.fakeimg{
+    background-color: #aaa;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    text-align: center;
+    margin:auto;
+}
+img{
+    width:100%;
+}
+.wrongdata{
+	color:red;
+	font-size:50% !important;
+}
+#submit{
+    width:100%;
+    margin-top: 30px;
+    height:30px;
+    background-color: rgb(122, 185, 222);
+    border:none;
+    color:white;
+}
+#submit:hover{
+	background-color:rgb(74, 168, 222);
+}
+#cancel{
+    background-color: rgb(234, 98, 98);
+    color:white;
+    padding:5px 20px;
+    border:none;
+}
+#cancel:hover{
+	background-color: rgb(233, 67, 67);
+}
+
+/* The container */
+
+.container {
+    display: block;
+    position: relative;
+    padding:27px 40px;
+}
+    
+    /* Hide the browser's default checkbox */
+    .container input {
+    opacity: 0;
+    height: 0;
+    width: 0;
+    }
+    
+    /* Create a custom checkbox */
+    .checkmark {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+    }
+    /* On mouse-over, add a grey background color */
+    .container:hover input ~ .checkmark {
+    background-color: #ccc;
+    }
+    
+    /* When the checkbox is checked, add a blue background */
+    .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+    }
+    
+    /* Create the checkmark/indicator (hidden when not checked) */
+    .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    }
+    
+    /* Show the checkmark when checked */
+  
+    .container input:checked ~ .checkmark:after {
+    display: block;
+    }
+  
+    
+    /* Style the checkmark/indicator */
+    .container .checkmark:after {
+        left: 6px;
+        top: 2px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    } 
+    
+ /* Responsive layout */
+ @media screen and (min-width: 900px){
+		.login{
+		width:800px;
+		}
+		.leftcolumn{
+		width:55%;
+		}
+		.rightcolumn{
+		 width:45%;
+		}
+		.card1{background-color:white;}
+}
+@media screen and (max-width: 800px){
+		.login{
+		width:400px;
+		}
+		.leftcolumn{
+		width:100%;
+		background-image: url("../media/background.png");
+		}
+		.rightcolumn{
+		 width:0%;
+		 display:none;
+		}
+		.card1{background-color:none;}
+		
+}

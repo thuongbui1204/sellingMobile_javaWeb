@@ -1,0 +1,127 @@
+@charset "UTF-8";
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial;
+    padding:10px;
+    background: #f1f1f1;
+
+}
+#logo{
+    width:70px;
+    float:left;
+}
+.greeting{
+	float:left;
+	padding-left: 20px;	
+	color:rgb(91, 83, 83);
+}
+#adminname{
+	color:rgb(228, 223, 223);
+}
+.leftcolumn{
+    float:left;
+    background-color: #f1f1f1;
+    display:block;
+}
+.leftcolumn a{
+    display: block;
+    text-decoration: none;
+    background-color: #29afb3;
+    padding: 12px 10px;
+    color: rgb(228, 223, 223);
+}
+.leftcolumn a:hover{
+    background-color: #03989e;
+    color:black;
+    text-decoration:none;
+}
+.leftcolumn span{
+    padding:0px 5px;
+    vertical-align: middle;
+}
+.rightcolumn{
+    float:left;
+    background-color: white;
+    display:block;
+}
+.card{
+    display: block;
+    padding: 20px;
+}
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+    height:0px
+    }
+
+.header{
+    background-image: url("../media/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.headerTag{
+    display: block;
+    position: absolute;
+    bottom: 40px;
+}
+.header h1{
+    font-size: 50px;
+}
+.logout{
+    text-decoration: none;
+}
+.logout span{
+    color:rgb(91, 83, 83);
+    vertical-align: middle;
+}
+
+.content p{
+    background-color: #03989e;
+    padding:15px;
+    margin:0px;
+    width:90%;
+}
+.content table{
+    background-color: #b6e1e3;
+    padding:15px;
+}
+table{
+	width:100%;
+    text-align: left;
+    padding:15px;
+    border-collapse:collapse;
+}
+tr,th, td{
+    padding:15px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+/*Responsive layout - when the screen is less than 400px*/
+@media screen and (min-width: 800px){
+.logout span{
+
+    padding:0px 12px;
+
+}
+}
+/* Responsive layout - when the screen is less than 800px*/
+@media screen and (max-with: 800px){
+	.logout span{
+
+    padding:0px 5px;
+
+}
+}
+
